@@ -1,5 +1,6 @@
 import React from 'react';
 import './StarWars.css';
+import MovieAppearances from './MovieAppearances';
 
 const Character = props => {
     return (
@@ -8,13 +9,7 @@ const Character = props => {
             <div>
                 <h3>Appears in:</h3>
                 <ul>
-                    {props.movies.map(film => {
-                        return props.char.films.map(movie => {
-                            if (film.url === movie) {
-                                return <li>{movie.title}</li>
-                            }
-                        })
-                    })}
+                    <MovieAppearances char={props.char} movies={props.movies} />             
                 </ul>
             </div>
             <div>
