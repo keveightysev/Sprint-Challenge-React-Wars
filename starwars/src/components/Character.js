@@ -6,13 +6,14 @@ const Character = props => {
     return (
         <div className="char-card">
             <h2>{props.char.name}</h2>
-            <div>
+            <div className="char-lists">
+            <div className="left">
                 <h3>Appears in:</h3>
                 <ul>
                     <MovieAppearances char={props.char} movies={props.movies} />             
                 </ul>
             </div>
-            <div>
+            <div className="right">
                 <h3>Physical Attributes</h3>
                 <table>
                     <tbody>
@@ -42,6 +43,7 @@ const Character = props => {
                     </tr>
                     </tbody>
                 </table>
+            </div>
             </div>
         </div>
     );

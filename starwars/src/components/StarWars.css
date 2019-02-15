@@ -1,3 +1,48 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 .char-card {
     background: white;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.char-lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+td {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px;
+    width: 50%;
+}
+
+td:first-child {
+    border: 0;
+    padding: 0;
+    text-align: right;
 }
